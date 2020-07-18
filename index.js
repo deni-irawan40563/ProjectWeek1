@@ -49,35 +49,26 @@ let bioData = {
 let gradeCheck = (math,indonesian,english,biology) => {
 
   if (typeof math !== 'number' || math > 100){
-      console.log( `ada data yang salah di nilai matematika
-      anda menginput => ${math}`);
+      console.log( `ada data yang salah di nilai matematika anda menginput => ${math}`);
   }else if(typeof indonesian !== 'number' || indonesian > 100){
-      console.log( `ada data yang salah di nilai matematika
-      anda menginput => ${indonesian}`);
+      console.log( `ada data yang salah di nilai bahasa indonesia anda menginput => ${indonesian}`);
   }else if(typeof english !== 'number' || english > 100){
-      console.log( `ada data yang salah di nilai matematika
-      anda menginput => ${english}`);
+      console.log( `ada data yang salah di nilai bahasa inggris anda menginput => ${english}`);
   }else if(typeof biology !== 'number' || biology > 100){
-      console.log( `ada data yang salah di nilai matematika
-      anda menginput => ${math}`);
+      console.log( `ada data yang salah di nilai biologi anda menginput => ${math}`);
   }else{
       let value = math + indonesian + english + biology;
       let average = value / 4;
           if (average <= 59){
-              console.log (`rata-rata nilai anda ${average}
-              masuk dalam grade E`);
+              console.log (`rata-rata nilai anda ${average} masuk dalam grade E`);
          }else if(average <= 69){
-              console.log (`rata-rata nilai anda ${average}
-              masuk dalam grade D`);
+              console.log (`rata-rata nilai anda ${average} masuk dalam grade D`);
          }else if(average <= 79){
-               console.log (`rata-rata nilai anda ${average}
-               masuk dalam grade C`);
+               console.log (`rata-rata nilai anda ${average} masuk dalam grade C`);
          }else if(average <= 89){
-              console.log (`rata-rata nilai anda ${average}
-              masuk dalam grade B`);
+              console.log (`rata-rata nilai anda ${average} masuk dalam grade B`);
          }else{
-              console.log (`rata-rata nilai anda ${average}
-              masuk dalam grade A`);
+              console.log (`Selamat rata-rata nilai anda ${average} masuk dalam grade A`);
          }
   }
 };
