@@ -55,7 +55,7 @@ let gradeCheck = (math,indonesian,english,biology) => {
   }else if(typeof english !== 'number' || english > 100){
       console.log( `ada data yang salah di nilai bahasa inggris anda menginput => ${english}`);
   }else if(typeof biology !== 'number' || biology > 100){
-      console.log( `ada data yang salah di nilai biologi anda menginput => ${math}`);
+      console.log( `ada data yang salah di nilai biologi anda menginput => ${biology}`);
   }else{
       let value = math + indonesian + english + biology;
       let average = value / 4;
