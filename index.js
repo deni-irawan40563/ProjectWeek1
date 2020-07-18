@@ -47,7 +47,9 @@ let bioData = {
 
 //soal 2
 let gradeCheck = (math,indonesian,english,biology) => {
-
+if (math,indonesian,english,biology === undefined){
+  console.log ('data yang anda masukan belum lengkap, mohon periksa kembali !. Jika memang nilai belum ada maka masukkan angka 0 (nol)');
+}else{
   if (typeof math !== 'number' || math > 100){
       console.log( `ada data yang salah di nilai matematika anda menginput => ${math}`);
   }else if(typeof indonesian !== 'number' || indonesian > 100){
@@ -70,6 +72,7 @@ let gradeCheck = (math,indonesian,english,biology) => {
          }else{
               console.log (`Selamat rata-rata nilai anda ${average} masuk dalam grade A`);
          }
+}
   }
 };
 
