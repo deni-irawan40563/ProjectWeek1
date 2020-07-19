@@ -90,3 +90,12 @@ let printSegitiga = (num)=> {
 };
 
 printSegitiga(9);
+
+// Soal No 4
+//No 4A
+data = {...data, name : "Deni Irawan Nugraha", email : "deni.Irawan40563@gmail.com", hobby : ["gaming","Swimming","Wibu"]};
+console.log (data);
+
+//No 4B
+let {street, city} = data.address;
+console.log(`Kota ${city} Jalan ${street}`);
