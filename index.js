@@ -71,9 +71,22 @@ let gradeCheck = (math,indonesian,english,biology) => {
                           console.log (`rata-rata nilai anda ${average} masuk dalam grade B`);
                      }else{
                           console.log (`Selamat rata-rata nilai anda ${average} masuk dalam grade A`);
-                     }
+                     } 
                   }
           }
  };
 
 gradeCheck(100,100,90,80);
+
+//Soal No 3
+let printSegitiga = (num)=> {
+  for (let i = 0; i <= num ; i++){
+     let bintang = '';
+        for (let j = i + 1 ;j <= num ;j++){
+           bintang +=  j - i + ' ';
+           }
+    console.log (bintang);
+     }
+};
+
+printSegitiga(9);
