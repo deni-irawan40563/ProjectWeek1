@@ -80,6 +80,9 @@ gradeCheck(100,100,90,80);
 
 //Soal No 3
 let printSegitiga = (num)=> {
+ if (typeof num !== 'number'){
+   console.log('data harus berupa angka');
+ }else{
   for (let i = 0; i <= num ; i++){
      let bintang = '';
         for (let j = i + 1 ;j <= num ;j++){
@@ -87,6 +90,7 @@ let printSegitiga = (num)=> {
            }
     console.log (bintang);
      }
+ }
 };
 
 printSegitiga(9);
