@@ -78,7 +78,7 @@ let hasilSlice = dataArray.slice(5,7);
 console.log(hasilSlice);
 
 // Soal No 2
-let searchName = (key,param)=> {
+let searchName = (key,callback)=> {
         const name = [
         'Abigail', 'Alexandra', 'Alison',
         'Amanda', 'Angela', 'Bella',
@@ -87,14 +87,18 @@ let searchName = (key,param)=> {
         'Ella', 'Faith', 'Olivia', 'Penelope'];
 
         for(i = 0; i < name.length; i++){
-              let regex = 'gi';
+              let regex = 'i';
               let cek = new RegExp (`${key}`,regex);
                    if(cek.test(name[i]) === true){
-                     console.log(name[i]);
-          }
+                     callback(name[i]);
+        }
         }
 };
-searchName('an',2);
+let display = (call) =>{
+        console.log(call);
+};
+searchName('an', display);
+
 
 
 // Soal No 3
@@ -112,4 +116,4 @@ const filterArray = (nilaiAwal,nilaiAkhir,dataArray) => {
 }
 };
 
-filterArray(2,42,[1,2,8,4,7,8,18,20,23,12,42,3,10,15,17]);
+filterArray(2,10,[1,2,8,4,7,8,18,20,23,12,42,3,10,15,17]);
