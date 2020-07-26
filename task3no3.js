@@ -17,7 +17,7 @@
     })
 }
 
-studentCheck('AURIN')
+studentCheck('xxx')
   .then((res)=>{
     console.log(res)
   })
@@ -45,10 +45,11 @@ studentCheck('AURIN')
 }
 
 
-sum ('senin','mqndi')
+sum ('Deni','Irawan')
   .then((res)=>{
     console.log(res)
   })
   .catch ((err)=>{
     console.log(err.message)
   })
+  
